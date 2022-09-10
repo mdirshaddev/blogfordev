@@ -3,6 +3,18 @@
   "homepage": "https://github.com/mdirshaddev/hackfest#readme",
   "version": "1.0.0",
   "description": "A Modern full-fledged Admin and User Control based Blogging web application",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "telemetry": "next telemetry",
+    "prettier-write": "prettier --write .",
+    "check-lint": "next lint",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "test": "echo \"Write tests!\" && exit 0",
+    "prepare": "husky install"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mdirshaddev/hackfest.git"

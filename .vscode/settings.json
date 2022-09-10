@@ -1,0 +1,34 @@
+{
+  // Files
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "files.eol": "\n",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  // Workbench
+  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.editor.showIcons": true,
+  "workbench.editor.wrapTabs": true,
+  // Editor
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.autoIndent": "advanced",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.fontFamily": "'Hack Nerd Font Mono', Consolas, 'Courier New', monospace",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modifications",
+  "editor.formatOnPaste": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "wordWrapColumn",
+  // Termminal
+  "terminal.integrated.enableBell": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontFamily": "'MesloLGS NF', Consolas, 'Courier New', monospace"
+}

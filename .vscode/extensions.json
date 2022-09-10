@@ -23,6 +23,6 @@
     "vscode-icons-team.vscode-icons",
     "redhat.vscode-yaml",
     "pkief.material-icon-theme",
-    "PKief.material-icon-theme"
+    "dotenv.dotenv-vscode"
   ]
 }

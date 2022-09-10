@@ -10,3 +10,6 @@ workbox*.js
 
 # env
 .env.local
+
+# typescript
+*.tsbuildinfo

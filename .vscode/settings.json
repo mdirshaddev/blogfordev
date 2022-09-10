@@ -30,5 +30,10 @@
   // Termminal
   "terminal.integrated.enableBell": true,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.fontFamily": "'MesloLGS NF', Consolas, 'Courier New', monospace"
+  "terminal.integrated.fontFamily": "'MesloLGS NF', Consolas, 'Courier New', monospace",
+  // CSS
+  "css.format.enable": true,
+  "css.validate": false,
+  // TailwindCSS
+  "tailwindCSS.validate": true
 }

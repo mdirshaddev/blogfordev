@@ -1,0 +1,30 @@
+{
+  "name": "hackfest",
+  "homepage": "https://github.com/mdirshaddev/hackfest#readme",
+  "version": "1.0.0",
+  "description": "A Modern full-fledged Admin and User Control based Blogging web application",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdirshaddev/hackfest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mdirshaddev/hackfest/issues"
+  },
+  "author": "Md Irshad <mdirshaddev+github@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "nextjs",
+    "reactjs",
+    "typescript",
+    "eslint",
+    "prettier",
+    "husky",
+    "commitlint",
+    "pwa"
+  ],
+  "engines": {
+    "node": "^12.13.0",
+    "vscode": "^1.22.0"
+  }
+}

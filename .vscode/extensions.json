@@ -1,0 +1,28 @@
+{
+  "recommendations": [
+    "cschleiden.vscode-github-actions",
+    "github.github-vscode-theme",
+    "me-dutour-mathieu.vscode-github-actions",
+    "softwaredotcom.swdc-vscode",
+    "ms-azuretools.vscode-docker",
+    "dbaeumer.vscode-eslint",
+    "4a454646.github-purple",
+    "eamodio.gitlens",
+    "gitpod.gitpod-remote-ssh",
+    "oderwat.indent-rainbow",
+    "christian-kohler.path-intellisense",
+    "johnpapa.vscode-peacock",
+    "esbenp.prettier-vscode",
+    "ms-vscode-remote.remote-containers",
+    "ms-vscode-remote.remote-ssh",
+    "ms-vscode-remote.remote-ssh-edit",
+    "ms-vscode-remote.remote-wsl",
+    "bradlc.vscode-tailwindcss",
+    "wayou.vscode-todo-highlight",
+    "gruntfuggly.todo-tree",
+    "vscode-icons-team.vscode-icons",
+    "redhat.vscode-yaml",
+    "pkief.material-icon-theme",
+    "PKief.material-icon-theme"
+  ]
+}

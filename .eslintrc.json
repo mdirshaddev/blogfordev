@@ -4,14 +4,43 @@
     "es2021": true,
     "node": true
   },
-  "extends": ["next", "prettier"],
-  "rules": {
-    "import/extensions": 0,
-    "import/no-unresolved": 0,
-    "no-console": 2,
-    "no-unused-vars": 2,
-    "react/jsx-filename-extension": 0,
-    "react/jsx-props-no-spreading": 0,
-    "react/react-in-jsx-scope": 0
-  }
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "overrides": [
+    // Storybook
+    {
+      "extends": ["plugin:storybook/recommended"],
+      // or whatever matches stories specified in .storybook/main.js
+      "files": ["*.stories.@(ts|tsx)"],
+      "parserOptions": {
+        "sourceType": "module"
+      },
+      "rules": {
+        // example of overriding a rule
+        "storybook/hierarchy-separator": "error",
+        // example of disabling a rule
+        "storybook/default-exports": "off"
+      }
+    },
+    // TypeScript NextJS
+    {
+      "extends": ["next", "next/core-web-vitals", "prettier"],
+      "files": ["*.@(ts|tsx)"],
+      "parserOptions": {
+        "sourceType": "module"
+      },
+      "rules": {
+        "import/extensions": 0,
+        "import/no-unresolved": 0,
+        "no-console": 2,
+        "no-unused-vars": 2,
+        "react/jsx-filename-extension": 0,
+        "react/jsx-props-no-spreading": 0,
+        "react/react-in-jsx-scope": 0
+      }
+    }
+  ]
 }

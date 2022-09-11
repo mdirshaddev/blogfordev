@@ -27,7 +27,11 @@
     },
     // TypeScript NextJS
     {
-      "extends": ["next", "next/core-web-vitals", "prettier"],
+      "extends": [
+        "plugin:@next/next/recommended",
+        "next/core-web-vitals",
+        "prettier"
+      ],
       "files": ["*.@(ts|tsx)"],
       "parserOptions": {
         "sourceType": "module"

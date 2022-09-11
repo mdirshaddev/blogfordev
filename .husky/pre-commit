@@ -5,10 +5,16 @@
 echo '😒😒😒😒 wait a minute, we format your code 😒😒😒😒'
 
 yarn prettier-write
-
+# Check prettier standards
 yarn check-format ||
 (
     echo '🤢🤮🤢🤮 Your styling looks disgusting. 🤢🤮🤢🤮'
+    false;
+)
+# Check eslint standards
+yarn check-lint ||
+(
+    echo '🤡😂❌🤡 Failed lint check.Are you seriously trying to write that? Make the changes required above.🤡😂❌🤡'
     false;
 )
 # Check tsconfig standards

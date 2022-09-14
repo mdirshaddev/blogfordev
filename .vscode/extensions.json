@@ -23,6 +23,11 @@
     "vscode-icons-team.vscode-icons",
     "redhat.vscode-yaml",
     "pkief.material-icon-theme",
-    "dotenv.dotenv-vscode"
+    "dotenv.dotenv-vscode",
+    "graphql.vscode-graphql",
+    "graphql.vscode-graphql-syntax",
+    "unifiedjs.vscode-mdx",
+    "prisma.prisma",
+    "mongodb.mongodb-vscode"
   ]
 }

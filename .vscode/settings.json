@@ -9,11 +9,11 @@
     "**/Thumbs.db": true
   },
   "files.eol": "\n",
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "off",
   "files.autoSaveDelay": 1000,
   // Workbench
-  "workbench.colorTheme": "GitHub Dark Default",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Github Purple",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.showIcons": true,
   "workbench.editor.wrapTabs": true,
   // Editor
@@ -35,5 +35,8 @@
   "css.format.enable": true,
   "css.validate": false,
   // TailwindCSS
-  "tailwindCSS.validate": true
+  "tailwindCSS.validate": true,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  }
 }

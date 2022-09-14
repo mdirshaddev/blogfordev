@@ -40,10 +40,22 @@
         "import/extensions": 0,
         "import/no-unresolved": 0,
         "no-console": 2,
-        "no-unused-vars": 2,
+        "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
         "react/jsx-filename-extension": 0,
         "react/jsx-props-no-spreading": 0,
         "react/react-in-jsx-scope": 0
+      }
+    },
+    // Graphql
+    {
+      "files": ["*.graphql"],
+      "parser": "@graphql-eslint/eslint-plugin",
+      "parserOptions": {
+        "schema": "src/generated/schema.graphql"
+      },
+      "plugins": ["@graphql-eslint"],
+      "rules": {
+        "@graphql-eslint/known-type-names": "error"
       }
     }
   ]

@@ -9,7 +9,11 @@ sw.js
 workbox*.js
 
 # env
+.env
 .env.local
 
 # typescript
 *.tsbuildinfo
+
+# graphql types generation
+src/generated

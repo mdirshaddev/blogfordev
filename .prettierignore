@@ -2,3 +2,5 @@ node_modules
 .next
 src/graphql/**/*.graphql
 src/generated/*
+public/sw*
+public/workbox-*

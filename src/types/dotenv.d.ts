@@ -6,5 +6,6 @@ declare namespace NodeJS {
     PROVIDER_GITHUB_ID: string;
     AUTH_SECRET: string;
     MONGODB_URI: string;
+    NEXT_PUBLIC_SERVER_URL: string;
   }
 }

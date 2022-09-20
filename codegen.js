@@ -1,5 +1,5 @@
 module.exports = {
-  schema: ["./src/generated/schema.graphql"],
+  schema: "./src/generated/schema.graphql",
   documents: ["./src/graphql/**/*.graphql"],
   overwrite: true,
   generates: {

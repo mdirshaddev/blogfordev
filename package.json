@@ -20,7 +20,7 @@
     "generate": "yarn generate:prisma && yarn generate:nexus && yarn generate:schema",
     "generate:prisma": "prisma generate",
     "generate:nexus": "ts-node --transpile-only -P tsconfig.nexus.json src/graphql/utilities/schema",
-    "generate:schema": "graphql-codegen --config codegen.js",
+    "generate:schema": "graphql-codegen --config codegen.ts",
     "vercel-build": "yarn generate && yarn build"
   },
   "repository": {

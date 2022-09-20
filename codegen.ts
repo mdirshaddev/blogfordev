@@ -1,4 +1,6 @@
-module.exports = {
+import type { CodegenConfig } from "@graphql-codegen/cli";
+
+const config: CodegenConfig = {
   schema: "./schema.graphql",
   documents: ["./src/graphql/**/*.graphql"],
   overwrite: true,
@@ -16,4 +18,7 @@ module.exports = {
       },
     },
   },
+  require: ["ts-node/register"],
 };
+
+export default config;

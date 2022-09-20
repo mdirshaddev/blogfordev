@@ -51,7 +51,7 @@
       "files": ["*.graphql"],
       "parser": "@graphql-eslint/eslint-plugin",
       "parserOptions": {
-        "schema": "src/generated/schema.graphql"
+        "schema": "schema.graphql"
       },
       "plugins": ["@graphql-eslint"],
       "rules": {

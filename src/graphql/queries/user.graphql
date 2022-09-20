@@ -1,0 +1,8 @@
+query UserExample($string: String!) {
+  user(userId: $string) {
+    id
+    name
+    email
+    image
+  }
+}

@@ -20,7 +20,8 @@
     "generate": "yarn generate:prisma && yarn generate:nexus && yarn generate:schema",
     "generate:prisma": "prisma generate",
     "generate:nexus": "ts-node --transpile-only -P tsconfig.nexus.json src/graphql/utilities/schema",
-    "generate:schema": "graphql-codegen"
+    "generate:schema": "graphql-codegen",
+    "vercel-build": "yarn generate && yarn build"
   },
   "repository": {
     "type": "git",
@@ -43,7 +44,7 @@
     "pwa"
   ],
   "engines": {
-    "node": ">=16.17.0"
+    "node": ">=16.15.0"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.4",

@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import NextAuth from "next-auth";
 import { prisma } from "libs/prisma";
 import GitHubProvider from "next-auth/providers/github";
@@ -33,7 +32,6 @@ export default NextAuth({
     jwt: async ({ token, user, account }) => {
       if (user) token.id = user.id;
       if (account) token.accessToken = account.access_token;
-      console.log(token);
       return token;
     }, // called whenever session is checked
     session: async ({ session, token }) => {

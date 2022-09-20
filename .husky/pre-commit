@@ -23,6 +23,12 @@ yarn check-types ||
     echo '🤡😂❌🤡 Failed Type check.Are you seriously trying to write that? Make the changes required above.🤡😂❌🤡'
     false;
 )
+# Generate Nexus, Prisma and GraphQL Codegen
+yarn generate ||
+(
+    echo '🤡😂❌🤡 Failed to generate. Are you seriously trying to write that? Make the changes required above.🤡😂❌🤡'
+    false;
+)
 # If everything passes... Now we can commit
 echo '🤔🤔🤔🤔... Alright.... Code looks good to me... Trying to build now. 🤔🤔🤔🤔'
 yarn build ||

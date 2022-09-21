@@ -1,11 +1,11 @@
 import type { CodegenConfig } from "@graphql-codegen/cli";
 
 const config: CodegenConfig = {
-  schema: "./schema.graphql",
-  documents: ["./src/graphql/**/*.graphql"],
   overwrite: true,
+  schema: "schema.graphql",
+  documents: ["./src/graphql/**/*.graphql"],
   generates: {
-    "./src/generated/graphql.tsx": {
+    "src/generated/graphql.tsx": {
       plugins: [
         "typescript",
         "typescript-operations",
@@ -16,6 +16,9 @@ const config: CodegenConfig = {
         fetcher: "graphql-request",
         addInfiniteQuery: true,
       },
+    },
+    "graphql.schema.json": {
+      plugins: ["introspection"],
     },
   },
   require: ["ts-node/register"],

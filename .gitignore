@@ -17,3 +17,5 @@ workbox*.js
 
 # graphql types generation
 src/generated
+
+schema.graphql

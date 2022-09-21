@@ -9,7 +9,7 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "src"
   },
-  "include": ["**/*.d.ts"],
+  "include": ["**/*.d.ts", "schema.graphql"],
   "ts-node": {
     "transpileOnly": true,
     "require": ["tsconfig-paths/register"]

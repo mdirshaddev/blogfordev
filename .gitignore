@@ -18,4 +18,8 @@ workbox*.js
 # graphql types generation
 src/generated
 
+graphql.schema.json
+
 schema.graphql
+
+.vercel

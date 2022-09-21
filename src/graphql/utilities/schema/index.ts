@@ -36,6 +36,7 @@ export const baseSchema = makeSchema({
       },
     ],
   },
+  shouldGenerateArtifacts: true,
 });
 
 export const schema = applyMiddleware(

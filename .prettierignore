@@ -5,3 +5,4 @@ src/generated/*
 public/sw*
 public/workbox-*
 graphql.schema.json
+schema.graphql

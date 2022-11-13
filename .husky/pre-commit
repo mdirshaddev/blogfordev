@@ -2,39 +2,48 @@
 . "$(dirname "$0")/_/husky.sh"
 
 
-echo '😒😒😒😒 wait a minute, we format your code 😒😒😒😒'
+echo '🏗️👷 Checking for Styling, lintint, typings and building your project before committing';
 
-yarn prettier-write
-# Check prettier standards
+# Check Prettier standards
 yarn check-format ||
 (
-    echo '🤢🤮🤢🤮 Your styling looks disgusting. 🤢🤮🤢🤮'
-    false;
+  echo '🤢🤮🤢🤮 Its F**KING RAW - Your styling looks disgusting. 🤢🤮🤢🤮
+    Prettier Check Failed. Run yarn format, add changes and try commit again.';
+  false;
 )
-# Check eslint standards
+
+# Check ESLint Standards
 yarn check-lint ||
 (
-    echo '🤡😂❌🤡 Failed lint check.Are you seriously trying to write that? Make the changes required above.🤡😂❌🤡'
-    false;
+  echo '😤🏀👋😤 Get that weak s**t out of here! 😤🏀👋😤 
+    ESLint Check Failed. Make the required changes listed above, add changes and try to commit again.';
+  false; 
 )
+
 # Check tsconfig standards
 yarn check-types ||
 (
-    echo '🤡😂❌🤡 Failed Type check.Are you seriously trying to write that? Make the changes required above.🤡😂❌🤡'
-    false;
+  echo '🤡😂❌🤡 Failed Type check. 🤡😂❌🤡
+    Are you seriously trying to write that? Make the changes required above.';
+  false;
 )
+
 # Generate Nexus, Prisma and GraphQL Codegen
 yarn generate ||
 (
-    echo '🤡😂❌🤡 Failed to generate. Are you seriously trying to write that? Make the changes required above.🤡😂❌🤡'
-    false;
+	echo '🤡😂❌🤡 Failed to generate. Are you seriously trying to write that? Make the changes required above.🤡😂❌🤡'
+	false;
 )
 # If everything passes... Now we can commit
 echo '🤔🤔🤔🤔... Alright.... Code looks good to me... Trying to build now. 🤔🤔🤔🤔'
+
 yarn build ||
 (
-    echo '❌👷🔨❌ What I say to you What I say to you ❌👷🔨❌'
-    false;
+	echo '❌👷🔨❌ What I say to you What I say to you ❌👷🔨❌'
+	false;
 )
+
+echo '🧑‍🔬👮🧑‍💻... Alright... Everything looks good to me... 🧑‍🚀🚀';
+
 # If everything passes... Now we can commit
-echo '✅✅✅✅ You win this time... I am committing this now. ✅✅✅✅'
+echo '✅✅✅✅ You win this time... I am committing this now. ✅✅✅✅';

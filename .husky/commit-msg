@@ -1,4 +1,13 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npx --no -- commitlint --edit ${1}
+echo '🏗️👷 Lintint commit message before commit is saved';
+
+yarn check-commit || 
+(
+  echo '⛑️ Get Some Help for this commit message check the commitlint config.';
+  false;
+)
+
+# If everything passes... Now we can save commit
+echo '✅✅✅✅ You win this time... I am saving this commit now. ✅✅✅✅';

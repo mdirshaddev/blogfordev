@@ -18,8 +18,15 @@ workbox*.js
 # graphql types generation
 src/generated
 
+# introspection file
 graphql.schema.json
 
+# graphql schema
 schema.graphql
 
+# vercel
 .vercel
+
+# storybook
+storybook-static
+

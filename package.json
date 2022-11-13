@@ -1,6 +1,6 @@
 {
   "name": "hackfest",
-  "homepage": "https://github.com/mdirshaddev/hackfest#readme",
+  "homepage": "https://mdirshaddev.github.io/hackfest",
   "version": "1.0.0",
   "description": "A Modern full-fledged Admin and User Control based Blogging web application",
   "scripts": {
@@ -21,7 +21,8 @@
     "generate:prisma": "prisma generate",
     "generate:nexus": "ts-node --transpile-only -P tsconfig.nexus.json src/graphql/utilities/schema",
     "generate:schema": "graphql-codegen --config codegen.ts",
-    "vercel-build": "yarn generate && yarn build"
+    "vercel-build": "yarn generate && yarn build",
+    "deploy-storybook": "yarn build-storybook && gh-pages -d storybook-static"
   },
   "repository": {
     "type": "git",
@@ -94,6 +95,7 @@
     "eslint-config-next": "^12.3.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-storybook": "^0.6.4",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",

@@ -31,11 +31,11 @@ export default NextAuth({
     // called after sucessful signin
     jwt: async ({ token, user, account }) => {
       if (user) token.id = user.id;
-      if (account) token.accessToken = account.access_token;
+      if (account) token.accessToken = account.access_token as string;
       return token;
     }, // called whenever session is checked
     session: async ({ session, token }) => {
-      if (token) session.id = token.id;
+      if (token) session.user.accessToken = token.accessToken;
       return session;
     },
   },

@@ -3,3 +3,5 @@ node_modules
 public/*.js
 src/generated/*
 graphql.schema.json
+storybook-static
+

@@ -6,3 +6,5 @@ public/sw*
 public/workbox-*
 graphql.schema.json
 schema.graphql
+storybook-static
+
